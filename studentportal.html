@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>annamalaiuniversity - student portal</title>
+        <style>
+            body{
+                margin: 0%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                box-sizing: border-box;
+                background-image: url(backimg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #heading{
+                margin: 20px;
+                padding: 10px 20px;
+                justify-content: space-evenly;
+                background-color: rgb(157, 67, 67);
+                color: whitesmoke;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+            .title{
+                text-align: center;
+                justify-content: center;
+                display: inline-flex;
+                gap: 15px;
+            }
+            #heading img{
+                width: 36px;
+                height: auto;
+                vertical-align: middle;
+            }
+            #heading h1, #heading p{
+                margin: 0%;
+            }
+            .portal{
+                margin: 10px;
+                text-align: center;
+                color: rgba(251, 245, 245, 0.916);
+                font-size: 2em; 
+                font-weight: bold;
+                text-shadow: 1px 2px 5px rgb(204, 212, 95);
+            }
+            .portal , .details{
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            .details{
+                display: flex ;
+                justify-content: space-around;
+            }
+            .activity{
+                    margin: 20px;
+                    background-color: #d7dce0;
+                    color: rgb(64, 1, 1);
+                    width: 400px;
+                    font-size: larger;
+                    box-shadow: 7px 10px 0 0 rgb(208, 191, 191);
+                    border-radius: 10px;
+            }
+            .notice{
+                margin: 20px;
+                background-color: #d7dce0;
+                color: rgb(64, 1, 1);
+                width: 400px;
+                font-size:larger;
+                box-shadow: 7px 10px 0 0 rgb(208, 191, 191);
+                border-radius: 10px;
+            }
+            .info{
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #d7dce0;
+                justify-content: center;
+                color: rgb(64, 1, 1);
+                width: 350px;
+                text-align: center;
+                border-radius: 12px;
+            }
+            .footer{
+                margin: 20px;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+            <div class="title">
+                <img src="logo.jpg">
+                <h1>Annamalai University</h1>
+            </div>
+            <p>Accredited with 'A+' Grade by NAAC</p>
+        </div>
+        <div class="portal">
+            STUDENT PORTAL
+        </div>
+        <div class="details">
+            <div class="activity">
+            <h2 style="text-decoration:underline; text-align: center; ">Upcoming Activities</h2>
+            <ul style="list-style-type:none;">
+                <li>&#x1F4C5; Workshop on AI July 10</li>
+                <li>&#x1F4C5; Guest Lecture July 18</li>
+                <li>&#x1F4C5; HackathonRegistrations Open</li>
+            </ul>
+            </div>
+            <div class="notice">
+                <h2 style="text-decoration: underline; text-align: center;">Circulars & Events</h2>
+                <ul style="list-style-type: none;" >
+                <li>&#x1F4CD; Semester Exams from July 15</li>
+                <li>&#x1F4CD; Internal marks uploaded by June 25</li>
+                <li>&#x1F4CD; Projects due by June 30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+                <h2>Student Information</h2>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="roll">Roll no:</label><br>
+                    <input type="number" id="roll" name="roll"><br><br>
+                    <label for="email">Mail ID:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="number">Contact no:</label><br>
+                    <input type="number" id="number" name="number"><br><br>
+                    <label for="dept">Department:</label><br>
+                    <input type="text" id="dept" name="dept"><br><br>
+                    <input style="text-align: center;background-color: royalblue; color: white; padding: 10px;" type="submit" value="Submit now"> 
+                </form>
+            </div>
+            <footer class="footer">
+                <p>&#128222; Contact: +91-1234567890 | &#128231; Email: info@annamalaiuniversity.edu.in</p>
+                <p>&#x1F4CD; Address: Annamalai University, Tamil Nadu</p>
+            </footer>
+    </body>

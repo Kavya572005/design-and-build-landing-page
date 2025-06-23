@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <div id="heading"></div>
+    <script>
+        let rows = parseInt(prompt('Enter the row number:'));
+        let cols = parseInt(prompt('Enter the column number:'));
+
+        if (isNaN(rows) || isNaN(cols) || rows <= 0 || cols <= 0) {
+            alert('Enter a valid number');
+        } else {
+            let table = "<table border='1' cellpadding='10' style='margin:auto; text-align:center; border-collapse:collapse;'>";
+
+            for (let i = 0; i < rows; i++) {
+                table += '<tr>';
+                for (let j = 0; j < cols; j++) {
+                    let color = (i + j) % 2 == 0 ? "white" : "black";
+                    table += "<td style='background-color:" + color + "; width:30px; height:30px;'></td>";
+                }
+                table += '</tr>';
+            }
+            table += "</table>";
+            document.getElementById('heading').innerHTML = table;
+        }
+    </script>
+</body>
+</html>
+    <!-- <script>
+        for(i= 1; i<= 5; i++){
+            for(j= 1; j<= 5; j++){
+                document.write('i value is:' + i + ' --- j value is:' + j + '<br>');
+
+            }
+        }
+    </script> -->
+    <!-- <h2 style="text-align: center;">Student Info</h2>
+    <script>
+        let studentTable = "<table border='1' cellspacing='0' cellpadding='15' style='margin:auto; text-align:center; width: 500px ; height: 30px; text-align:center ; background-color: lightyellow;'>";
+            studentTable += "<tr style='background-color:pink;'><th>Roll No</th><th>Name</th><th>Marks</th><th>age</th><th>id</th></tr>";
+            for (let i = 1; i <= 5; i++) {
+                studentTable += "<tr style='background-color:beige;'>";
+                studentTable += "<td>" + i + "</td>";
+                studentTable += "<td>Student " + i + "</td>";
+                studentTable += "<td>" + (50 + i * 5) + "</td>";
+                studentTable += "<td>" + i + "</td>";
+                studentTable += "<td>" + i + "</td>";
+                studentTable += "</tr>";
+            }
+            studentTable += "</table>";
+            document.write(studentTable);
+         </script> -->
+         <!-- <h2 style="text-align: center;">Book List</h2>
+         <script>
+            let bookTable = "<table border='1' cellspacing='0' cellpadding='10' style='margin:auto; text-align:center; background-color: #f0f8ff'>";
+                bookTable += "<tr style='background-color: #add8e6;'><th>Book ID</th><th>Title</th><th>Author</th><th>Price</th><th>Rating</th></tr>";
+                for (let i = 1; i <= 5; i++) {
+                    bookTable += "<tr>";
+                    bookTable += "<td>Book" + i + "</td>";
+                    bookTable += "<td>Book Title " + i + "</td>";
+                    bookTable += "<td>Author " + i + "</td>";
+                    bookTable += "<td>₹" + 150 + i  + "</td>";
+                    bookTable += "<td>" +  (4 + (i % 2)).toFixed(1) + "</td>";
+                    bookTable += "</tr>";
+                }
+                bookTable += "</table>";
+                document.write(bookTable);
+            </script> -->
+<!-- <div id="table-container">
+        <div id="table"></div>
+    </div> -->
+    <!-- <script>
+        const style = document.createElement("style");
+        style.innerHTML = `body, html {
+        height: 100%;
+        margin: 0;
+        }
+        #table-container {
+        display: flex;
+        justify-content: center;  
+        align-items: center;          
+        }
+        table {
+        border-collapse: collapse;
+        }
+        td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;}`;
+        document.head.appendChild(style);
+        let row = "<tr>";
+            for (let i = 1; i <= 5; i++) {
+                row += "<td>" + i + "</td>";
+            }
+            row += "</tr>";
+            document.getElementById("table").innerHTML = "<table>" + row + "</table>";
+        </script> -->
+        <!-- <script>
+            const style = document.createElement("style");
+            style.innerHTML = `body, html {
+            height: 100%;
+            margin: 0;}
+            #table-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center;}
+            table {
+            border-collapse: collapse;}
+            td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            width: 50px;
+            height: 50px;}`;
+            document.head.appendChild(style);
+            let tableContent = "";
+            let count = 1;
+            for (let i = 0; i < 5; i++) {
+                tableContent += "<tr>";
+                    for (let j = 0; j < 5; j++) {
+                        tableContent += "<td>" + count + "</td>";
+                        count++;
+                    }
+                    tableContent += "</tr>";
+                }
+                document.getElementById("table").innerHTML = "<table>" + tableContent + "</table>";
+            </script> -->
+</body>
+</html>
